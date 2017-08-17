@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   devise_for :admins
   root to: 'home#index'
 
-  namespace :authors do
+  namespace :admins do
+    get '/account' => 'accounts#edit', as: :account
   end
 
   scope module: 'all' do

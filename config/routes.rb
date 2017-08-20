@@ -30,7 +30,10 @@ Rails.application.routes.draw do
     end
 
     #resume
-    get 'resume' => 'resume#index', as: :resume
+    scope module: 'resume' do
+      get 'resume' => 'resume#index', as: :resume
+    end
+
   end
 
 end

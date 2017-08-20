@@ -1,13 +1,13 @@
 <div class="navbar-fixed">
-  <nav class="orange tigfolio-navbar">
+  <nav class="deep-purple darken-3 tigfolio-navbar">
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">Home</a>
       <ul class="right hide-on-med-and-down">
-        <li><%= link_to 'Current Projects', root_path %></li>
-        <li><%= link_to 'Blog', root_path %></li>
-        <li><%= link_to 'Resume', root_path %></li>
+        <li><%= link_to 'Current Projects', project_path %></li>
+        <li><%= link_to 'Blog', blog_path %></li>
+        <li><%= link_to 'Resume', resume_path %></li>
         <% if admin_signed_in? %>
-          <li><%= link_to 'Account', root_path %></li>
+          <li><%= link_to 'Account', admins_account_path %></li>
         <% end %>
       </ul>
     </div>

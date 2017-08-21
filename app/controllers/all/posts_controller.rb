@@ -1,5 +1,4 @@
-module All
-  module Blog
+  module All
     class PostsController < ApplicationController
 
       def index
@@ -7,7 +6,6 @@ module All
 
       def show
       end
-      
+
     end
   end
-end

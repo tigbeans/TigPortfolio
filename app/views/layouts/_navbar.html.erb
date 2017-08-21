@@ -3,8 +3,8 @@
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">Home</a>
       <ul class="right hide-on-med-and-down">
-        <li><%= link_to 'Current Projects', project_path %></li>
-        <li><%= link_to 'Blog', blog_path %></li>
+        <li><%= link_to 'Current Projects', projects_path %></li>
+        <li><%= link_to 'Blog', posts_path %></li>
         <li><%= link_to 'Resume', resume_path %></li>
         <% if admin_signed_in? %>
           <li><%= link_to 'Account', admins_account_path %></li>

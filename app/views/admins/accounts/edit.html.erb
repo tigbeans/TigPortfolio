@@ -1,0 +1,54 @@
+<div class="row">
+
+  <!-- Basic Info -->
+  <%= form_tag admins_info_path, method: :put do %>
+    <%= fields_for :admin do |f| %>
+      <div class="col s6">
+        <div class="card-panel">
+          <div class="card-title">
+            <span class="card-header-text">Basic Info</span>
+          </div>
+          <div class="input-field">
+            <%= f.label :name %></br>
+            <%= f.text_field :name, value: current_admin.name, class: 'validate', autofocus: true %>
+          </div>
+          <div class="input-field">
+            <%= f.label :email %></br>
+            <%= f.text_field :email, value: current_admin.email, class: 'validate', autofocus: true %>
+          </div>
+          <div class="input-field">
+            <%= f.submit "Update Info", class: 'btn waves-effect waves-light submit_button' %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+
+  <%= form_tag admins_change_password_path, method: :put do %>
+    <%= fields_for :admin do |f| %>
+      <div class="col s6">
+        <div class="card-panel">
+          <div class="card-title">
+            <span class="card-header-text">Change Password</span>
+          </div>
+          <div class="input-field">
+            <%= f.label :current_password %></br>
+            <%= f.text_field :current_password, class: 'validate', autofocus: true %>
+          </div>
+          <div class="input-field">
+            <%= f.label :new_password %></br>
+            <%= f.text_field :new_password, class: 'validate', autofocus: true %>
+          </div>
+          <div class="input-field">
+            <%= f.label :new_password_confirmation %></br>
+            <%= f.text_field :new_password_confirmation, class: 'validate', autofocus: true %>
+          </div>
+          <div class="input-field">
+            <%= f.submit "Change Password", class: 'btn waves-effect waves-light submit_button' %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+  <!-- Change Password -->
+</div>

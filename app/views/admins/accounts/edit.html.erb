@@ -33,15 +33,15 @@
           </div>
           <div class="input-field">
             <%= f.label :current_password %></br>
-            <%= f.text_field :current_password, class: 'validate', autofocus: true %>
+            <%= f.password_field :current_password, class: 'validate', autofocus: true %>
           </div>
           <div class="input-field">
             <%= f.label :new_password %></br>
-            <%= f.text_field :new_password, class: 'validate', autofocus: true %>
+            <%= f.password_field :new_password, class: 'validate', autofocus: true %>
           </div>
           <div class="input-field">
             <%= f.label :new_password_confirmation %></br>
-            <%= f.text_field :new_password_confirmation, class: 'validate', autofocus: true %>
+            <%= f.password_field :new_password_confirmation, class: 'validate', autofocus: true %>
           </div>
           <div class="input-field">
             <%= f.submit "Change Password", class: 'btn waves-effect waves-light submit_button' %>

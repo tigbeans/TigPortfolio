@@ -59,3 +59,5 @@ gem 'materialize-sass'
 gem 'material_icons'
 
 gem 'annotate'
+
+gem 'friendly_id', '~> 5.1.0'

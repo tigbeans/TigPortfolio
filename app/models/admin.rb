@@ -24,6 +24,7 @@ class Admin < ApplicationRecord
   devise :database_authenticatable, :recoverable, :rememberable, :trackable, :validatable
 
   has_many :posts
+  has_many :projects
 
   def change_password(attrs)
     update(password: attrs[:new_password], password_confirmation: attrs[:new_password_confirmation])

@@ -1,4 +1,2 @@
-<% @projects.each do |f| %>
-  show <%= f.title %> - <%= f.content %>
-  <br/>
-<% end %>
+<%= provide(:page_title, 'All Projects') %>
+<%= provide(:projects_active, 'active') %>

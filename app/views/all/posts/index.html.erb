@@ -1,4 +1,18 @@
-<% @posts.each do |f| %>
-  show <%= f.title %> - <%= f.content %>
-  <br/>
-<% end %>
+<%= provide(:page_title, 'All Posts') %>
+<%= provide(:posts_active, 'active') %>
+
+<div class="row posts-index">
+  <% @posts.each do |f| %>
+    <div class="col s12 m4">
+      <div class="card">
+          <div class="card-image">
+            <img src='<%= f.image_url %>' alt="">
+            <span class="card-title"><%= f.title %></span>
+          </div>
+          <div class="card-content">
+            <%= f.content %>
+          </div>
+      </div>
+    </div>
+  <% end %>
+</div>

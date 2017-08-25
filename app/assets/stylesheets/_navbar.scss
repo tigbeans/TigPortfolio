@@ -1,7 +1,11 @@
-.tigportfolio-navbar {
+.navbar-fixed {
   background-color: $primary-color !important;
-}
-
-.nav-wrapper {
-  padding: 0 20px;
+  .nav-wrapper {
+    padding: 0 20px;
+    .nav-link {
+      &.active {
+        background: $primary-color-darken;
+      }
+    }
+  }
 }

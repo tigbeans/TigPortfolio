@@ -1,7 +1,7 @@
 <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper">
-      <%= link_to 'Home', root_path, class: "brand-logo nav-link  #{yield(:home_active)}" %>
+      <%= link_to 'Home', root_path, class: "brand-logo nav-link" %>
       <ul class="right hide-on-med-and-down">
         <li><%= link_to 'Current Projects', projects_path, class: "nav-link #{yield(:projects_active)}" %></li>
         <li><%= link_to 'Blog', posts_path, class: "nav-link #{yield(:posts_active)}" %></li>

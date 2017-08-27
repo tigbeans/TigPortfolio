@@ -1,2 +1,22 @@
 <%= provide(:page_title, 'All Projects') %>
 <%= provide(:projects_active, 'active') %>
+
+<% @projects.each do |f| %>
+<div class="row">
+  <div class="col s12 m10 offset-m1">
+    <div class="card horizontal">
+      <div class="car-image">
+        <img src='<%= f.card_image_url %>'>
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p><%= f.content %></p>
+        </div>
+        <div class="card-action">
+          <%= link_to f.title, f %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>

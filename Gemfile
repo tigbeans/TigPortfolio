@@ -54,9 +54,12 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+gem 'sprockets-rails'
+
 # gem 'bootstrap-sass', '~> 3.3.6'
-gem 'materialize-sass'
-gem 'material_icons'
+gem 'bootstrap', '~> 4.0.0.beta'
+# gem 'materialize-sass'
+# gem 'material_icons'
 
 gem 'annotate'
 

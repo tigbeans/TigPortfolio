@@ -2,9 +2,13 @@
   .row {
     margin-top: 75px;
     .card {
-      .card-content {
+      text-decoration: none;
+      .card-title {
+        color: $primary-blue-gray;
+      }
+      .card-text {
         color: #444444;
-        height: 200px;
+        height: 170px;
       }
       img {
         max-height: 160px;

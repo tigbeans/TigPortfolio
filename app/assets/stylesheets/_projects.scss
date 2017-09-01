@@ -1,0 +1,16 @@
+// Place all the styles related to the Projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.projects.index {
+  .row {
+    .card {
+      .card-img-left {
+        border-bottom-left-radius: calc(.25rem - 1px);
+        border-top-left-radius: calc(.25rem - 1px);
+        float: left;
+        padding-right: 1em;
+        margin-bottom: -1.25em;
+      }
+    }
+  }
+}

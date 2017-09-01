@@ -4,16 +4,14 @@
 <% @posts.in_groups_of(4, false).each do |group| %>
   <div class="row">
     <% group.each do |f| %>
-      <div class="col s12 m3">
+      <div class="col-md-3 col-sm-12">
         <%= link_to f do %>
         <div class="card">
-            <div class="card-image">
-              <img src='<%= f.image_url %>'>
-              <span class="card-title"><%= f.title %></span>
-            </div>
-            <div class="card-content">
-              <%= truncate(f.content, length: 130) %>
-            </div>
+          <img class="card-img-top" src='<%= f.image_url %>'>
+          <div class="card-body">
+            <h4 class="card-title"><%= f.title %></h4>
+            <p class="card-text"><%= truncate(f.content, length: 130) %></p>
+          </div>
         </div>
         <% end %>
       </div>

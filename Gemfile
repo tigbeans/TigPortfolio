@@ -58,6 +58,7 @@ gem 'sprockets-rails'
 
 # gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap', '~> 4.0.0.beta'
+gem 'popper_js', '~> 1.11.1'
 # gem 'materialize-sass'
 # gem 'material_icons'
 

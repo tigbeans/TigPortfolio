@@ -1,19 +1,23 @@
 <%= provide(:page_title, 'All Posts') %>
 <%= provide(:posts_active, 'active') %>
 
+
 <% @posts.in_groups_of(4, false).each do |group| %>
   <div class="row">
     <% group.each do |f| %>
       <div class="col-md-3 col-sm-12">
-        <%= link_to f do %>
+        <!-- <%= link_to f do %> -->
         <div class="card">
           <img class="card-img-top" src='<%= f.image_url %>'>
           <div class="card-body">
             <h4 class="card-title"><%= f.title %></h4>
             <p class="card-text"><%= truncate(f.content, length: 130) %></p>
+            <div class="text-center">
+              <%= link_to "Read More", f, class: "btn btn-sm btn-outline-primary" %>
+            </div>
           </div>
         </div>
-        <% end %>
+        <!-- <% end %> -->
       </div>
     <% end %>
   </div>

@@ -1,5 +1,20 @@
 .navbar {
-  background-color: $primary-blue-gray !important;
-  font-weight: 300;
-  
+  // background-color: $primary-blue-gray !important;
+  background-color: white;
+  padding: 10px 30px;
+  .navbar-brand {
+    color: $primary-blue-gray;
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $primary-blue-gray;
+          &.active {
+            color: $primary-light-purple;
+          }
+        }
+      }
+    }
+  }
 }

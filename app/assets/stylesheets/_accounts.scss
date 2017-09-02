@@ -1,14 +1,14 @@
 .card-header-text {
   font-size: 36px;
-  color: $primary-color;
+  color: $primary-blue-gray;
 }
 
 .input-field input[type=text]:focus {
-  color: $primary-color;
-  border-bottom: 1px solid $primary-color !important;
-  box-shadow: 0 1px 0 0 $primary-color !important;
+  color: $primary-blue-gray;
+  border-bottom: 1px solid $primary-blue-gray !important;
+  box-shadow: 0 1px 0 0 $primary-blue-gray !important;
 }
 
 .submit_button {
-  background: $primary-color !important;
+  background: $primary-blue-gray !important;
 }

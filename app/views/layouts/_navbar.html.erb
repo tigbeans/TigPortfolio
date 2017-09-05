@@ -1,20 +1,3 @@
-<!-- <div class="navbar">
-  <nav>
-    <div class="nav-wrapper">
-      <%= link_to 'Home', root_path, class: "brand-logo nav-link" %>
-      <ul class="right hide-on-med-and-down">
-        <li><%= link_to 'Current Projects', projects_path, class: "nav-link #{yield(:projects_active)}" %></li>
-        <li><%= link_to 'Blog', posts_path, class: "nav-link #{yield(:posts_active)}" %></li>
-        <li><%= link_to 'Resume', resume_path, class: "nav-link #{yield(:resume_active)}" %></li>
-        <% if admin_signed_in? %>
-          <li><%= link_to 'Account', admins_account_path, class: "nav-link #{yield(:account_active)}" %></li>
-          <li><%= link_to 'Logout', destroy_admin_session_path, method: :delete %></li>
-        <% end %>
-      </ul>
-    </div>
-  </nav>
-</div> -->
-
 <nav class="navbar navbar-expand-lg fixed-top">
   <%= link_to 'Home', root_path, class: 'navbar-brand' %>
   <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

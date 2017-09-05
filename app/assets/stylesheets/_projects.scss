@@ -3,13 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .projects.index {
   .row {
-    .card {
-      .card-img-left {
-        border-bottom-left-radius: calc(.25rem - 1px);
-        border-top-left-radius: calc(.25rem - 1px);
-        float: left;
-        padding-right: 1em;
-        margin-bottom: -1.25em;
+    .project-card {
+      border: solid 1px rgba(0, 0, 0, 0.125);
+      .project-card-content {
+        float:left
+      }
+
+      .project-card-image {
+        float: right;
       }
     }
   }

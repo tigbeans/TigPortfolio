@@ -10,11 +10,12 @@
 
 <div class="container">
   <% @projects.each do |f| %>
-  <div class="row">
-    <div class="col-sm-12 offset-lg-1 offset-md-1 col-md-12">
+  <div class="col-md-12">
+    <div class="row">
         <div class="project-card">
           <div class="col-md-3">
             <h4><%= f.title %></h4>
+            <!-- <div class="project-image" class="float-left" style="background-image: url('<%= f.card_image_url %>')"></div> -->
             <img class="float-left" src='<%= f.card_image_url %>'>
           </div>
           <div class="cold-md-9">

@@ -1,10 +1,22 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.bio-group {
-  color: #555;
-  p {
-      font-size: 16px;
-      font-weight: 300;
+.home.index {
+margin-bottom: 50px;
+  .jumbotron.jumbotron-fluid {
+    background: white;
+    color: $primary-blue-gray;
+  }
+
+  .bio-group {
+    padding: 2rem 15%;
+    color: $primary-blue-gray;
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        &.gr {
+          color: $accent-baddass;
+        }
+    }
   }
 }

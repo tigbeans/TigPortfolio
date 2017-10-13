@@ -1,27 +1,29 @@
 <%= provide(:page_title, 'My Posts') %>
-<div class="container">
-  <div class="">
-    <table class="table">
-      <thead class="thead-inverse">
-        <tr>
-          <th colspan="5">Title</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @posts.each do |post| %>
-        <tr>
-          <td><%= link_to post.title, admins_post_path(post) %></td>
-          <td></td>
-          <% if post.published? %>
-            <td><%= link_to 'Unpublish', unpublish_admins_post_path(post), method: :put, class: 'btn btn-sm btn-outline-primary' %></td>
-          <% else %>
-            <td><%= link_to 'Publish', publish_admins_post_path(post), method: :put, class: 'btn btn-sm btn-outline-success' %></td>
-          <% end %>
-          <td><%=  %></td>
-          <td><%=  %></td>
-        </tr>
+<div class="container post-admin-container">
+  <table class="table table-hover">
+    <thead class="thead">
+      <tr>
+        <th class="table-header" colspan="5">Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @posts.each do |post| %>
+      <tr>
+        <td><%= link_to post.title, admins_post_path(post) %></td>
+        <td></td>
+        <% if post.published? %>
+          <td><%= link_to 'Unpublish', unpublish_admins_post_path(post), method: :put, class: 'btn btn-sm btn-outline-primary' %></td>
+        <% else %>
+          <td><%= link_to 'Publish', publish_admins_post_path(post), method: :put, class: 'btn btn-sm btn-outline-success' %></td>
         <% end %>
-      </tbody>
-    </table>
+        <td><%= link_to 'Edit', edit_admins_post_path(post), class: 'btn btn-sm btn-outline-warning' %></td>
+        <td><%= link_to 'Delete', admins_post_path(post), method: :delete, class: 'btn btn-sm btn-outline-danger' %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <div class="new-post-button-div">
+    <%= link_to 'New Post', new_admins_post_path, class: 'btn btn-sm btn-outline-primary' %>
   </div>
 </div>

@@ -57,7 +57,7 @@ module Admins
     def destroy
       @project.destroy
       respond_to do |format|
-        format.html { redirect_to admins_projects_path, 
+        format.html { redirect_to admins_projects_path,
           notice: 'Project was successfully destroyed' }
         format.json { head :no_content }
       end

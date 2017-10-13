@@ -11,8 +11,18 @@ Rails.application.routes.draw do
     put '/change_password' => 'accounts#change_password', as: :change_password
 
 
-    resources :posts
-    resources :projects
+    resources :posts do
+      # on: :member changes :post_id to match what the controller gets in
+      put 'publish' => 'posts#publish', on: :member
+      put 'unpublish' => 'posts#unpublish', on: :member
+    end
+
+    resources :projects do
+      # on: :member changes :post_id to match what the controller gets in
+      put 'publish' => 'projects#publish', on: :member
+      put 'unpublish' => 'projects#unpublish', on: :member
+    end
+
     resources :resume
 
   end

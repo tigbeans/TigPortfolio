@@ -1,6 +1,6 @@
 module Admins
   class PostsController < AdminsController
-    before_action :set_post, only: [:show :edit, :update, :destroy, :publish, :unpublish]
+    before_action :set_post, only: [:show, :edit, :update, :destroy, :publish, :unpublish]
 
     def index
       @posts = Post.all
@@ -23,7 +23,7 @@ module Admins
 
     def unpublish
       @post.unpublish
-      redirect_to authors_posts_url
+      redirect_to admins_posts_url
     end
 
     def create

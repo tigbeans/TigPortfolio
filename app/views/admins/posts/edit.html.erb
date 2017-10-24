@@ -1,0 +1,5 @@
+<% provide(:page_title, "Edit #{@post.title}") %>
+
+<div class="container form-container">
+  <%= render 'form', post: @post, url: admins_post_path(@post)%>
+</div>

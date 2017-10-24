@@ -11,7 +11,13 @@
         .nav-link {
           color: $primary-blue-gray;
           &.active {
-            color: $accent-baddass;
+            // color: $accent-baddass;
+            border-bottom: solid 2px $accent-baddass;
+          }
+        }
+        .dropdown-menu.show {
+          .dropdown-item {
+            color: $primary-blue-gray;
           }
         }
       }

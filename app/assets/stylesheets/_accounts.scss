@@ -1,14 +1,26 @@
-.card-header-text {
-  font-size: 36px;
+// .card-header-text {
+//   font-size: 36px;
+//   color: $primary-blue-gray;
+// }
+//
+// .input-field input[type=text]:focus {
+//   color: $primary-blue-gray;
+//   border-bottom: 1px solid $primary-blue-gray !important;
+//   box-shadow: 0 1px 0 0 $primary-blue-gray !important;
+// }
+//
+.accounts.edit {
   color: $primary-blue-gray;
-}
+  font-weight: 300;
 
-.input-field input[type=text]:focus {
-  color: $primary-blue-gray;
-  border-bottom: 1px solid $primary-blue-gray !important;
-  box-shadow: 0 1px 0 0 $primary-blue-gray !important;
-}
+  h4.card-title {
+    font-size: 1rem;
+    margin-top: 2%;
+  }
 
-.submit_button {
-  background: $primary-blue-gray !important;
+  .submit_button {
+    color: white;
+    background: $primary-blue-gray;
+    border: solid 1px $primary-blue-gray;
+  }
 }

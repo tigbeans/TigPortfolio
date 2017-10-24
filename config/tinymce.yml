@@ -1,0 +1,7 @@
+toolbar:
+  - undo redo | styleselect | bold italic | codesample image
+plugins:
+ - codesample
+ - image
+height:
+  - 500

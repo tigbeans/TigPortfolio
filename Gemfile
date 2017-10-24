@@ -66,3 +66,5 @@ gem 'popper_js', '~> 1.11.1'
 gem 'annotate'
 
 gem 'friendly_id', '~> 5.1.0'
+
+gem 'tinymce-rails'

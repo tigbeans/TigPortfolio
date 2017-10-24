@@ -10,5 +10,9 @@
  @import "projects";
 
 html {
+  font-size: 16px;
   background: white;
+  .container {
+    padding-top: 10px;
+  }
 }

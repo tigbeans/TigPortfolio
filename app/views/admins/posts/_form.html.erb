@@ -1,6 +1,6 @@
 <%= form_for(post, url: url) do |f| %>
-  <div class="row">
-    <div class="col-md-12">
+  <div class="row equal">
+    <div class="col-md-4">
       <ul class="list-group">
         <li class="list-group-item list-group-header">
           <% if @post.new_record? %>
@@ -17,21 +17,27 @@
         </li>
         <li class="list-group-item">
           <div class="field">
-            <%= f.label :content %>
-            <%= f.text_area :content, class: 'tinymce' %>
-            <%= tinymce %>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="field">
             <%= f.label :image_url %>
             <%= f.text_field :image_url, class: 'form-control', required: true %>
           </div>
         </li>
-        <div class="actions">
-          <%= f.submit "Save Blog Post", class: "btn btn-default custom-form-submit-btn" %>
-        </div>
+        <li class="list-group-item">
+          <div class="field">
+            <%= f.label :description %>
+            <%= f.text_area :description, class: 'form-control' %>
+          </div>
+        </li>
       </ul>
+      <div class="actions">
+        <%= f.submit "Save Blog Post", class: "btn btn-default custom-form-submit-btn" %>
+      </div>
+    </div>
+    <div class="col-md-8 tinymce-content">
+      <div class="field">
+        <!-- <%= f.label :content %> -->
+        <%= f.text_area :content, class: 'tinymce' %>
+        <%= tinymce %>
+      </div>
     </div>
   </div>
 <% end %>

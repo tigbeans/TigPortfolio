@@ -1,0 +1,37 @@
+<%= form_for(project, url: url) do |f| %>
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="list-group">
+        <li class="list-group-item list-group-header">
+          <% if @project.new_record? %>
+            <h4>New Project</h4>
+          <% else %>
+            <h4>Edit: <span class="light-text"><%= @project.title %></span></h4>
+          <% end %>
+        </li>
+        <li class="list-group-item">
+          <div class="field">
+            <%= f.label :title %>
+            <%= f.text_field :title, class: 'form-control', required: true %>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="field">
+            <%= f.label :content %>
+            <%= f.text_area :content, class: 'tinymce' %>
+            <%= tinymce %>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="field">
+            <%= f.label :image_url %>
+            <%= f.text_field :image_url, class: 'form-control', required: true %>
+          </div>
+        </li>
+        <div class="actions">
+          <%= f.submit "Save Blog Project", class: "btn btn-default custom-form-submit-btn" %>
+        </div>
+      </ul>
+    </div>
+  </div>
+<% end %>

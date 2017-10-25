@@ -62,25 +62,33 @@
   .container {
     margin-top: 150px;
     margin-bottom: 150px;
-    .list-group-item.list-group-header {
-      background: $primary-blue-gray;
-      color: white;
-      h4 {
-        span.light-text {
-          font-weight: 100;
+    .col-md-4 {
+      .list-group {
+        height: 100%;
+        .list-group-item.list-group-header {
+          background: $primary-blue-gray;
+          color: white;
+          h4 {
+            span.light-text {
+              font-weight: 100;
+            }
+          }
+        }
+        .list-group-item {
+          color: $primary-blue-gray;
+          font-weight: 300px;
         }
       }
+      .custom-form-submit-btn {
+        background: $primary-blue-gray;
+        color: white;
+        // float: right;
+        margin-top: 10px;
+        font-weight: 100;
+      }
     }
-    .list-group-item {
-      color: $primary-blue-gray;
-      font-weight: 300px;
-    }
-    .custom-form-submit-btn {
-      background: $primary-blue-gray;
-      color: white;
-      float: right;
-      margin-top: 10px;
-      font-weight: 100;
+    .col-md-8.tinymce-content {
+      height: 100%
     }
   }
 }

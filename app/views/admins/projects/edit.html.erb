@@ -1,3 +1,5 @@
 <% provide(:page_title, "Edit #{@project.title}") %>
 
-<%= render 'form', project: @project, url: admins_project_path(@project)%>
+<div class="container">
+  <%= render 'form', project: @project, url: admins_project_path(@project)%>
+</div>

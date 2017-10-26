@@ -39,17 +39,18 @@
         // margin-right: 0;
         // max-width: 100%;
         // height: inherit;
-          p {
-          }
       }
     }
   }
 
   .container.project-admin-container {
+    font-weight: 100;
     .new-post-button-div {
       padding: 2% 1%;
     }
     .table-header {
+      font-weight: 300;
+      color: $primary-blue-gray;
       border-top: none;
     }
   }

@@ -46,14 +46,14 @@
   }
 
   .container.post-admin-container {
-    table {
-      font-weight: 300 !important;
-      .table-header {
-        border-top: none;
-      }
-    }
+    font-weight: 100;
     .new-post-button-div {
       padding: 2% 1%;
+    }
+    .table-header {
+      font-weight: 300;
+      color: $primary-blue-gray;
+      border-top: none;
     }
   }
 }

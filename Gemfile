@@ -68,3 +68,5 @@ gem 'annotate'
 gem 'friendly_id', '~> 5.1.0'
 
 gem 'tinymce-rails'
+
+gem 'font-awesome-rails'

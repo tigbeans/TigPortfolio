@@ -24,6 +24,8 @@
   </table>
 
   <div class="new-post-button-div">
-    <%= link_to 'New Post', new_admins_post_path, class: 'btn btn-sm btn-outline-primary' %>
+    <%= link_to new_admins_post_path, class: 'btn btn-sm btn-outline-primary' do %>
+      New Post
+    <% end %>
   </div>
 </div>

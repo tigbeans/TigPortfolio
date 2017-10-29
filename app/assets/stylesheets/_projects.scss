@@ -1,9 +1,5 @@
 .projects.index {
   margin-bottom: 50px;
-  .jumbotron.jumbotron-fluid {
-    background: white;
-    color: $primary-blue-gray;
-  }
 
   .row {
     margin-top: 30px;
@@ -52,6 +48,43 @@
       font-weight: 300;
       color: $primary-blue-gray;
       border-top: none;
+    }
+  }
+}
+
+.projects.new, .projects.edit {
+  .container {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    .col-md-4 {
+      .list-group {
+        height: 100%;
+        .list-group-item.list-group-header {
+          height: 100%;
+          background: $primary-blue-gray;
+          color: white;
+          h4 {
+            span.light-text {
+              font-weight: 100;
+            }
+          }
+        }
+        .list-group-item {
+          height: 100%;
+          color: $primary-blue-gray;
+          font-weight: 300px;
+        }
+      }
+      .custom-form-submit-btn {
+        background: $primary-blue-gray;
+        color: white;
+        // float: right;
+        margin: 10px 10px 0 0;
+        font-weight: 100;
+      }
+    }
+    .col-md-8.tinymce-content {
+      height: 100%
     }
   }
 }

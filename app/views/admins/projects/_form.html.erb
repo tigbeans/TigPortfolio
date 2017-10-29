@@ -1,6 +1,6 @@
 <%= form_for(project, url: url) do |f| %>
-  <div class="row">
-    <div class="col-md-12">
+  <div class="row equal">
+    <div class="col-md-4">
       <ul class="list-group">
         <li class="list-group-item list-group-header">
           <% if @project.new_record? %>
@@ -17,21 +17,40 @@
         </li>
         <li class="list-group-item">
           <div class="field">
-            <%= f.label :content %>
-            <%= f.text_area :content, class: 'tinymce' %>
-            <%= tinymce %>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="field">
             <%= f.label :card_image_url %>
             <%= f.text_field :card_image_url, class: 'form-control', required: true %>
           </div>
         </li>
-        <div class="actions">
-          <%= f.submit "Save Blog Project", class: "btn btn-default custom-form-submit-btn" %>
-        </div>
+        <li class="list-group-item">
+          <div class="field">
+            <%= f.label :percent_complete %>
+            <%= f.number_field :percent_complete, class: 'form-control', in: 0...101 %>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="field">
+            <%= f.label :start_date %>
+            <%= f.date_field :start_date, class: 'form-control' %>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="field">
+            <%= f.label :projected_end_date %>
+            <%= f.date_field :projected_end_date, class: 'form-control' %>
+          </div>
+        </li>
       </ul>
+      <div class="actions">
+        <%= link_to 'Back', admins_projects_path, class: 'btn btn-default btn-sm custom-form-submit-btn' %>
+        <%= f.submit "Save Project", class: "btn btn-default btn-sm custom-form-submit-btn" %>
+      </div>
+    </div>
+    <div class="col-md-8 tinymce-content">
+      <div class="field">
+        <!-- <%= f.label :content %> -->
+        <%= f.text_area :content, class: 'tinymce' %>
+        <%= tinymce %>
+      </div>
     </div>
   </div>
 <% end %>

@@ -1,9 +1,5 @@
 .posts.index {
   margin-bottom: 50px;
-  .jumbotron.jumbotron-fluid {
-    background: white;
-    color: $primary-blue-gray;
-  }
 
   .container.post-container {
     .row {
@@ -66,6 +62,7 @@
       .list-group {
         height: 100%;
         .list-group-item.list-group-header {
+          height: 100%;
           background: $primary-blue-gray;
           color: white;
           h4 {
@@ -75,6 +72,7 @@
           }
         }
         .list-group-item {
+          height: 100%;
           color: $primary-blue-gray;
           font-weight: 300px;
         }
@@ -83,7 +81,7 @@
         background: $primary-blue-gray;
         color: white;
         // float: right;
-        margin-top: 10px;
+        margin: .75rem .15rem 0 0;
         font-weight: 100;
       }
     }

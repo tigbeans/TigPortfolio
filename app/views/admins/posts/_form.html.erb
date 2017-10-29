@@ -24,12 +24,16 @@
         <li class="list-group-item">
           <div class="field">
             <%= f.label :description %>
-            <%= f.text_area :description, class: 'form-control' %>
+            <%= f.text_area :description, class: 'form-control', rows: 6 %>
           </div>
         </li>
       </ul>
       <div class="actions">
-        <%= f.submit "Save Blog Post", class: "btn btn-default custom-form-submit-btn" %>
+        <%= link_to 'Back', admins_posts_path, class: 'btn btn-default btn-sm custom-form-submit-btn' %>
+        <%= f.submit "Save", class: "btn btn-default btn-sm custom-form-submit-btn" %>
+        <% if @post.persisted? %>
+          <%= link_to 'Show', post_path(@post), class: 'btn btn-default btn-sm custom-form-submit-btn' %>
+        <% end %>
       </div>
     </div>
     <div class="col-md-8 tinymce-content">

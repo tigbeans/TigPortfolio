@@ -11,11 +11,18 @@
           .card-title {
             color: $primary-blue-gray;
           }
-          .card-text {
+          .card-title.card-info {
+            font-weight: 100;
+            color: $primary-light-purple;
+            font-size: .75rem;
+          }
+          .card-text.card-body {
             font-weight: 300;
             text-decoration: none;
             color: $primary-blue-gray;
-            height: 145px;
+            height: 120px;
+            padding: 3% 0;
+            font-size: .9rem;
           }
           .read-more-button.text-center {
             a {
@@ -87,6 +94,44 @@
     }
     .col-md-8.tinymce-content {
       height: 100%
+    }
+  }
+}
+
+.posts.show {
+  .container {
+    margin-top: 5%;
+    margin-bottom: 8%;
+    padding: 0 6%;
+    .image-jumbotron {
+      padding: 0;
+      display: block;
+      text-align: center;
+      background: white;
+    }
+    .post-show-buttons {
+      padding-bottom: 3%;
+      padding-top: 3%;
+      a {
+        color: $primary-light-purple;
+      }
+    }
+    .post-title {
+      margin-bottom: 2rem;
+      h2 {
+        font-size: 3rem;
+        font-weight: 300;
+      }
+    }
+    .post-content {
+      font-weight: 100;
+      .post-info {
+        p {
+          font-weight: 300;
+          font-size: .9rem;
+          color: $primary-light-purple
+        }
+      }
     }
   }
 }

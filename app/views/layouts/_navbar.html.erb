@@ -15,7 +15,9 @@
         <%= link_to 'current projects', projects_path, class: "nav-link #{yield(:projects_active)}" %>
       </li>
       <li class="nav-item">
-        <%= link_to 'resume', resume_path, class: "nav-link #{yield(:resume_active)}" %>
+        <%= link_to resume_path, class: "nav-link #{yield(:resume_active)}" do %>
+         r&eacute;sum&eacute;
+        <% end %>
       </li>
       <% if admin_signed_in? %>
         <li class="nav-item dropdown">
@@ -23,11 +25,13 @@
             <%= current_admin.email %>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <%= link_to 'My Posts', admins_posts_path, class: "dropdown-item" %>
-            <%= link_to 'My Projects', admins_projects_path, class: "dropdown-item" %>
-            <%= link_to 'My Resume', admins_resume_index_path, class: "dropdown-item" %>
-            <%= link_to 'Account', admins_account_path, class: "dropdown-item" %>
-            <%= link_to 'Logout', destroy_admin_session_path, method: :delete , class: "dropdown-item"%>
+            <%= link_to 'my posts', admins_posts_path, class: "dropdown-item" %>
+            <%= link_to 'my projects', admins_projects_path, class: "dropdown-item" %>
+            <%= link_to admins_resume_index_path, class: "dropdown-item" do %>
+              my r&eacute;sum&eacute;
+            <% end %>
+            <%= link_to 'account', admins_account_path, class: "dropdown-item" %>
+            <%= link_to 'logout', destroy_admin_session_path, method: :delete , class: "dropdown-item"%>
           </div>
         </li>
         <% end %>

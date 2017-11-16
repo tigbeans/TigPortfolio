@@ -72,3 +72,5 @@ gem 'tinymce-rails'
 gem 'font-awesome-rails'
 
 gem 'bootstrap-slider-rails'
+
+gem "paperclip", "~> 5.0.0"

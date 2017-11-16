@@ -17,7 +17,8 @@
         <img class="card-img-top" src='<%= f.image_url %>'>
         <div class="card-body">
           <h4 class="card-title"><%= f.title %></h4>
-          <p class="card-text"><%= truncate(f.description, length: 130) %></p>
+          <p class="card-title card-info"><%= f.display_day_published %></p>
+          <p class="card-text card-body"><%= truncate(f.description, length: 110) %></p>
           <div class="read-more-button text-center">
             <%= link_to "Read More", f, class: "btn btn-sm btn-outline-primary" %>
           </div>

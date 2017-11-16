@@ -2,11 +2,17 @@
     class PostsController < ApplicationController
 
       def index
-        @posts = Post.all
+        @posts = published_post
       end
 
       def show
-        @post = Post.friendly.find(params[:id])
+        @post = published_post.friendly.find(params[:id])
+      end
+
+      private
+
+      def published_post
+        Post.published
       end
 
     end

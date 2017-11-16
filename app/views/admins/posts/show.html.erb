@@ -1,0 +1,24 @@
+<% provide(:page_title, @post.title) %>
+
+<div class="container">
+  <div class="post-show-buttons">
+    <%= link_to 'Edit Post', edit_admins_post_path(@post), class: 'btn btn-sm btn-default' %> |
+    <%= link_to 'Delete Post', admins_post_path(@post), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-sm btn-default' %>
+  </div>
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center">
+      <div class="post-title">
+        <h2><%= @post.title %></h2>
+      </div>
+      <div class="post-content">
+        <p>
+          <%= @post.content.html_safe %>
+        </p>
+        <div class="post-info">
+          <p><%= @post.display_day_published %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

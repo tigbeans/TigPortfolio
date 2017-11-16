@@ -1,5 +1,5 @@
 toolbar:
-  - undo redo | styleselect | bold italic | codesample image
+  - undo redo | styleselect | bold italic | codesample image | fontsizeselect
 plugins:
  - codesample
  - image

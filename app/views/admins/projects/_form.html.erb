@@ -32,12 +32,14 @@
             <%= f.label :start_date %>
             <%= f.date_field :start_date, class: 'form-control' %>
           </div>
-        </li>
-        <li class="list-group-item">
           <div class="field">
             <%= f.label :projected_end_date %>
             <%= f.date_field :projected_end_date, class: 'form-control' %>
           </div>
+        </li>
+        <li class="list-group-item">
+          <%= f.label :description %>
+          <%= f.text_area :description, class: 'form-control' %> 
         </li>
       </ul>
       <div class="actions">

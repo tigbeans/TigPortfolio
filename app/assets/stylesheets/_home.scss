@@ -4,16 +4,12 @@
 .home.index {
 margin-bottom: 50px;
 
-
   .bio-group {
-    padding: 2rem 15%;
+    padding: 2rem 0;
     color: $primary-blue-gray;
     p {
         font-size: 16px;
         font-weight: 300;
-        &.gr {
-          color: $accent-baddass;
-        }
     }
   }
 }

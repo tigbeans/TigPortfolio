@@ -21,8 +21,14 @@
             <div class="project-content-text">
               <p><%= truncate(f.content, length: 500) %></p>
             </div>
-            <div class="">
-              <p><%=  %></p>
+            <div class="project-dates-text">
+              <p>Project began on <%= f.start_date %>, and is projected to end at <%= f.projected_end_date %></p>
+            </div>
+            <div class="project-percent-complete-text">
+              <p><%= f.percent_complete %>% Complete</p>
+            </div>
+            <div class="project-view-more">
+
             </div>
           </div>
       </div>

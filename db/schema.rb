@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171024133520) do
+ActiveRecord::Schema.define(version: 20171125155430) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -73,6 +73,7 @@ ActiveRecord::Schema.define(version: 20171024133520) do
     t.boolean  "published",          default: false, null: false
     t.datetime "published_at"
     t.integer  "admin_id"
+    t.text     "description"
     t.index ["admin_id"], name: "index_projects_on_admin_id", using: :btree
     t.index ["slug"], name: "index_projects_on_slug", unique: true, using: :btree
   end

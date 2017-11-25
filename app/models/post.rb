@@ -4,16 +4,8 @@ class Post < ApplicationRecord
 
   belongs_to :admin
 
-  scope :most_recent, -> { order(published_at: :asc)}
+  scope :most_recent, -> { order(published_at: :asc).limit(3)}
   scope :published, -> { where published: true }
-
-  def display_day_published
-    if published_at.present?
-      "Published #{published_at.strftime('%-b %-d, %Y')}"
-    else
-      "Not Published."
-    end
-  end
 
   def publish
     update(published: true, published_at: Time.now)

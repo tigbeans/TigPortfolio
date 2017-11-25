@@ -22,7 +22,7 @@ module Admins
     end
 
     def unpublish
-      @post.unpublish
+      @project.unpublish
       redirect_to admins_projects_url
     end
 
@@ -71,8 +71,8 @@ module Admins
 
     # Never trust parameters from the outside world, only allow the white list through
     def project_params
-      params.require(:post).permit(:title, :percent_complete,
-        :content, :card_image_url, :start_date, :projected_end_date)
+      params.require(:project).permit(:title, :percent_complete,
+        :content, :card_image_url, :start_date, :projected_end_date, :description)
     end
 
   end

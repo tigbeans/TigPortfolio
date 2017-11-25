@@ -4,6 +4,9 @@ class Project < ApplicationRecord
 
   belongs_to :admin
 
+  scope :most_recent, -> { order(published_at: :asc).limit(3)}
+  scope :published, -> { where published: true }
+
   def publish
     update(published: true, published_at: Time.now)
   end

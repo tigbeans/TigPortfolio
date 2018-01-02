@@ -17,18 +17,21 @@
             <h4><%= f.title %></h4>
             <img src='<%= f.card_image_url %>'>
           </div>
-          <div class="col-md-9 float-right project-card-content">
+          <div class="col-md-9 float-right project-card-content text-center">
             <div class="project-content-text">
-              <p><%= truncate(f.content, length: 500) %></p>
+              <p><%= truncate(f.description, length: 300) %></p>
             </div>
-            <div class="project-dates-text">
-              <p>Project began on <%= f.start_date %>, and is projected to end at <%= f.projected_end_date %></p>
+            <div class="project-other-info-text">
+              <p>
+                Began: <%= f.display_start_date %>
+                <br/>
+                Estimated Completion: <%= f.display_end_date %>
+                <br/>
+                <%= f.percent_complete %>% Complete
+              </p>
             </div>
-            <div class="project-percent-complete-text">
-              <p><%= f.percent_complete %>% Complete</p>
-            </div>
-            <div class="project-view-more">
-
+            <div class="read-more-button">
+              <%= link_to "Read More", f, class: 'btn btn-sm btn-outline-primary"' %>
             </div>
           </div>
       </div>

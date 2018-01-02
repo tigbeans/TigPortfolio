@@ -14,4 +14,13 @@ class Project < ApplicationRecord
   def unpublish
     update(published: false, published_at: nil)
   end
+
+  def display_start_date
+    "#{start_date.strftime("%B %d, %Y")}"
+  end
+
+  def display_end_date
+    "#{projected_end_date.strftime("%B %d, %Y")}"
+
+  end
 end

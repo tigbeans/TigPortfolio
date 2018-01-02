@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a project in which I am building a personal website that includes a blog,
+project roadmap, and resume, and whatever else I feel is necessary to add
+in the process of becoming a ruby on rails expert.
 
-Things you may want to cover:
+This project is not intended to be cloned or downloaded but just as a reference
+towards my ruby on rails capabilities.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project is currently using gems such as:
+ - postgresql
+ - devise
+ - bootstrap
+ - friendly id
+ - tinymce
+ 

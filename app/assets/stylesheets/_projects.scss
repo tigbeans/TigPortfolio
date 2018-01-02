@@ -5,7 +5,7 @@
     margin-top: 30px;
     .project-card {
       overflow: hidden;
-      border-radius: 10px;
+      border-radius: 0;
       margin: 10px;
       border: solid 1px rgba(0, 0, 0, .125);
       .col-md-3 {
@@ -14,7 +14,7 @@
         padding-left: 0;
         img {
           display: block;
-          border-radius: 10px 0 0 10px;
+          border-radius: 0 0 0 0;
           opacity: .85;
           width: 360px;
           height: 240px;
@@ -29,12 +29,33 @@
         }
       }
       .col-md-9.project-card-content {
-        padding: 25px 50px;
+        height: 100%;
+        padding: 25px 50px 15px 50px;
         max-width: 720px;
         font-weight: 300;
         // margin-right: 0;
         // max-width: 100%;
         // height: inherit;
+        .project-content-text {
+          font-size: .9rem;
+        }
+        .project-other-info-text {
+          color: $primary-light-purple;
+          font-size: .75rem;
+        }
+        .read-more-button {
+          bottom: 0;
+          // position: relative;
+          a {
+            color: $primary-blue-gray;
+            border: solid 1px $primary-blue-gray;
+            margin: 0;
+          }
+          a:hover {
+            color: white;
+            background-color: $primary-blue-gray;
+          }
+        }
       }
     }
   }
@@ -85,6 +106,50 @@
     }
     .col-md-8.tinymce-content {
       height: 100%
+    }
+  }
+}
+
+.projects.show {
+  .container {
+    margin-top: 5%;
+    margin-bottom: 8%;
+    padding: 0 6%;
+    .image-jumbotron {
+      padding: 0;
+      display: block;
+      text-align: center;
+      background: white;
+    }
+    .project-show-buttons {
+      padding-bottom: 3%;
+      padding-top: 3%;
+      a {
+        color: $primary-light-purple;
+      }
+    }
+    .project-title {
+      margin-bottom: 2rem;
+      h2 {
+        font-size: 3rem;
+        font-weight: 300;
+      }
+    }
+    .project-content {
+      font-weight: 100;
+      .project-info {
+        p {
+          font-weight: 300;
+          font-size: .9rem;
+          color: $primary-light-purple;
+        }
+        .progress {
+          .progress-bar {
+            background-color: $primary-blue-gray;
+            color: $primary-light-purple;
+          }
+        }
+      }
     }
   }
 }

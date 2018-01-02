@@ -69,8 +69,8 @@ gem 'friendly_id', '~> 5.1.0'
 
 gem 'tinymce-rails'
 
-gem 'font-awesome-rails'
+# gem 'font-awesome-rails'
 
-gem 'bootstrap-slider-rails'
+# gem 'bootstrap-slider-rails'
 
-gem "paperclip", "~> 5.0.0"
+# gem "paperclip", "~> 5.0.0"

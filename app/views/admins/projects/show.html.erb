@@ -1,1 +1,27 @@
 <% provide(:page_title, @project.title) %>
+
+<div class="container">
+  <div class="project-show-buttons">
+    <%= link_to 'Edit Project', edit_admins_project_path(@project), class: 'btn btn-sm btn-default' %> |
+    <%= link_to 'Delete Project', admins_project_path(@project), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-sm btn-default' %>
+  </div>
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center">
+      <div class="project-title">
+        <h2><%= @project.title %></h2>
+      </div>
+      <div class="project-content">
+        <p>
+          <%= @project.content.html_safe %>
+        </p>
+        <p id="start-end-dates">
+          Started on: <%= @project.start_date %> and should be finished by: <%= @project.projected_end_date %>
+        </p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: <%= @project.percent_complete %>%;" aria-valuenow="<%= @project.percent_complete %>" aria-valuemin="0" aria-valuemax="100"><%= @project.percent_complete%>% Complete</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -137,17 +137,17 @@
     }
     .project-content {
       font-weight: 100;
-      .project-info {
-        p {
-          font-weight: 300;
-          font-size: .9rem;
+      p {
+        font-weight: 300;
+        font-size: .9rem;
+        &#start-end-dates {
           color: $primary-light-purple;
         }
-        .progress {
-          .progress-bar {
-            background-color: $primary-blue-gray;
-            color: $primary-light-purple;
-          }
+      }
+      .progress {
+        .progress-bar {
+          background-color: $primary-blue-gray;
+          color: $primary-light-purple;
         }
       }
     }

@@ -11,13 +11,11 @@
         <p>
           <%= @project.content.html_safe %>
         </p>
-        <div class="project-info">
-          <p>
-            Started on: <%= @project.start_date %> and should be finished by: <%= @project.projected_end_date %>
-          </p>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: <%= @project.percent_complete %>%;" aria-valuenow="<%= @project.percent_complete %>" aria-valuemin="0" aria-valuemax="100"><%= @project.percent_complete%>% Complete</div>
-          </div>
+        <p id="start-end-dates">
+          Started on: <%= @project.start_date %> and should be finished by: <%= @project.projected_end_date %>
+        </p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: <%= @project.percent_complete %>%;" aria-valuenow="<%= @project.percent_complete %>" aria-valuemin="0" aria-valuemax="100"><%= @project.percent_complete%>% Complete</div>
         </div>
       </div>
     </div>

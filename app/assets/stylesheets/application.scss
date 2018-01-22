@@ -1,26 +1,22 @@
  // @import "bootstrap-sprockets";
  @import "bootstrap";
- // @import "materialize/components/color";
  @import "mycolors";
  @import "accounts";
- // @import "materialize";
  @import "navbar";
  @import "home";
  @import "posts";
  @import "projects";
- @import "font-awesome";
- @import "bootstrap-slider";
 
 html {
   font-size: 16px;
   background: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oxygen', sans-serif;
   .container {
     padding-top: 10px;
   }
 
   .jumbotron.jumbotron-fluid {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     background: white;
     color: $primary-blue-gray;
     padding-bottom: .5rem;

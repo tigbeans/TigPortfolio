@@ -9,20 +9,22 @@
 
 html {
   font-size: 16px;
-  background: white;
-  font-family: 'Oxygen', sans-serif;
-  .container {
-    padding-top: 10px;
-  }
-
-  .jumbotron.jumbotron-fluid {
-    font-family: 'Oxygen', sans-serif;
+  body {
     background: white;
-    color: $primary-blue-gray;
-    padding-bottom: .5rem;
-  }
+    font-family: 'Oxygen', sans-serif;
+    .container {
+      padding-top: 10px;
+    }
 
-  footer {
-    height: 1.5rem;
+    .jumbotron.jumbotron-fluid {
+      font-family: 'Oxygen', sans-serif;
+      background: white;
+      color: $primary-blue-gray;
+      padding-bottom: .5rem;
+    }
+
+    footer {
+      height: 1.5rem;
+    }
   }
-}
+  }
